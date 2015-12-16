@@ -9,4 +9,6 @@
 #don't track these files
 /vendor/*
 /dist/*
+/node_modules/*
+
 
