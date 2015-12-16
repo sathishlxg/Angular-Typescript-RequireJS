@@ -1,0 +1,22 @@
+{
+  "name": "learning-git",
+  "homepage": "https://github.com/sathishlxg/learning-git",
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "normalize-strings": "normalize#~1.0.4",
+    "reset-css": "~2.0.2011012602"
+  }
+}
