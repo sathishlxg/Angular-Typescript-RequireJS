@@ -1,7 +1,7 @@
 module.exports = function(grunt){
 
 	grunt.initConfig({
-		pkg: grunt.file.readJSON("package.json");
+		pkg: grunt.file.readJSON("package.json"),
 		concat:{
 			dist:{
 				src: ["/vendor/reset-css/reset.css", "/vendor/bootstrap/dist/bootstrap.css"],
@@ -10,7 +10,7 @@ module.exports = function(grunt){
 		}
 	});
 
-	grunt.loadNpmTasks("grunt-contrib-less");
+	//grunt.loadNpmTasks("grunt-contrib-less");
 	grunt.loadNpmTasks("grunt-contrib-concat");
-	grunt.registerTask("default", []);
+	grunt.registerTask("default", ["concat:dist"]);
 };
