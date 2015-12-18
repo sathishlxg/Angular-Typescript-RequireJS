@@ -1,5 +1,5 @@
 # learning-git
 
 ```javascript
-import module from 'modules/main'
+import module from './modules/main';
 ```
