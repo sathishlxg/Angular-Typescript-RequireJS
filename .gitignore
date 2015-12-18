@@ -1,0 +1,14 @@
+#see http://help.github.com/ignore-files for more about the ignore files
+
+.*
+
+#but track these files
+!.bowerrc
+!.gitignore
+
+#don't track these files
+/vendor/*
+/dist/*
+/node_modules/*
+
+
