@@ -1,0 +1,1 @@
+!function(){"use strict";function a(a){console.log(a+" loaded")}a("main module")}();

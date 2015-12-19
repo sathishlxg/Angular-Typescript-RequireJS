@@ -8,7 +8,7 @@
 
 #don't track these files
 /vendor/*
-/dist/*
+/temp/*
 /node_modules/*
 
 
