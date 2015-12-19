@@ -1,27 +1,28 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<title>Learnin Git</title>
-		<link rel="stylesheet" href="/vendor/reset-css/reset.css"/>
-		<link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css"/>
-		<link rel="stylesheet" href="/dist/css/app.css"/>
-	</head>
-	<body>
-		<main class="">
-		<div class="navbar navbar-inverse">
-			<div class="navbar-header"></div>
-			
-			<ul class="nav navbar-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
-			<ul class="nav navbar-nav pull-right">
-				<li><a href="#">Settings</a></li>
-			</ul>
-			
-		</div>
-		</main>
-		<script type="text/javascript" script="/dist/js/app.js"></script>
-	</body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Typescript</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/ui-grid.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/ui-grid-override.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/ngProgress.css" />
+</head>
+
+<body ng-controller="appController as app">    
+    <div class="overlay" ng-if="app.isLoading"></div>
+    <section ng-include="'modules/layout/templates/header.html'"></section>
+    <section ng-include="'modules/layout/templates/topNav.html'"></section>
+    <main ui-view></main>
+
+    <script type="text/javascript" src="../vendor/requirejs/require.min.js" data-main="require.Config.js"></script>
+</body>
+
 </html>

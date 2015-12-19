@@ -1,0 +1,18 @@
+<div class="ui-grid-filter-container" ng-class="{'text-center':isIcon}" ng-repeat="colFilter in col.filters">
+	<div ng-class="{'dropdown': !isIcon, 'btn-group': isIcon}">
+	    
+	    <button ng-if="!isIcon" class="btn btn-default dropdown-toggle" data-toggle="dropdown" ng-click="show()">{{selected}} 
+	    	<span class="fa fa-angle-down"></span>
+	    </button>
+	    
+	    <button ng-if="isIcon" class="sm-grid-filter" data-toggle="dropdown" ng-click="show()"><span class="fa fa-filter"></span></button>
+	    
+	    <ul class="dropdown-menu" ng-class="{'dropdown-menu-right': isIcon}">	
+	    	<li><a href="#" ng-click="select({})"><i class="fa fa-times-circle"></i> Clear</a></li>	     
+	    	<li class="divider"></li>
+            <li ng-repeat="opts in colFilter.selectOptions">
+                <a href="#" ng-click="select(opts)">{{opts.label}}</a>
+            </li>
+	    </ul>
+	</div>
+</div>

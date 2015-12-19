@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Arial";
+  min-width:768px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: white;
+    position: fixed;
+    z-index: 1000;
+    opacity: .5;
+}
+
+main{
+    margin-bottom: 30px;
+}
+
+a {
+  text-decoration: underline;
+  color: #0051AA;
+}
+
+.sm-header {
+  height: 80px;
+  padding: 20px;
+  width: 100%;  
+}
+.sm-header h4, .sm-header p {
+  padding: 0;
+  margin: 0;
+}
+.sm-header .sm-logo,
+.sm-header .sm-user-info {
+  display: inline-block;
+  height: 38px;
+}
+
+.sm-header .sm-logo{
+  border-right: 1px solid #E6E6E6;
+  padding-right: 30px;
+}
+.sm-header .sm-logo h4 {
+  width: 76px;
+  font-weight: 900;
+  color: #0051AA;
+}
+.sm-header .sm-user-info {
+  color: #474747;
+  vertical-align: top;
+  margin-left: 20px;
+}
+.sm-header .sm-user-info a {
+  margin-left: 10px;
+}
+.sm-header .sm-action {
+  display: inline-block;
+  margin: 8px 15px;
+}
+
+.sm-menu-wrapper{
+  background: #d5d5d5;
+}
+.sm-menu{
+  height: 40px;
+}
+
+.sm-menu ul {
+  list-style: none;
+}
+.sm-menu li {
+  display: inline-block;
+  border-right: 1px solid #fff;
+}
+
+.sm-menu li:first-child{
+  border-left: 1px solid #fff;
+}
+
+.sm-menu li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  color: #474747;
+  width: 100%;
+}
+.sm-menu li a i {
+  margin: 0 5px 0 6px;
+}
+
+.sm-menu li a.menu-active,
+.sm-menu li a:hover {
+  background: #0051AA;
+  color: #fff;
+}
+
+.sm-no-action {
+  color: #474747 !important;
+  text-decoration: none !important;
+}
+
+.sm-breadcrumb-wrapper{
+  background: #f7f7f7;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.sm-breadcrumb {
+  height: 30px;  
+  line-height: 30px;  
+  font-size: 13px;  
+}
+.sm-breadcrumb a {
+  color: #0051AA;
+}
+.sm-breadcrumb i {
+  margin: 0 5px;
+}
+
+.sm-page-title {
+  height: 40px;
+  margin-top: 30px;
+}
+.sm-page-title header {
+  font-size: 14pt;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d5d5d5;
+}
+.sm-page-title header i {
+  font-size: 12pt;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.sm-grid-header{
+  margin:10px 0;
+}
+
+.sm-grid-wrapper{
+  margin:10px 0;
+}
+
+.sm-status-1{
+  background: #1DF20A;
+}
+.sm-status-2{
+  background: yellow;
+}
+.sm-status-3{
+  background: red;
+}
+.sm-status{
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.sm-grid-filter{
+    display: inline-block;
+    background: #333;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    border: none;    
+}
+
+sm-grid-filter .dropdown-toggle{
+  width: 100%;
+  height: 30px;
+}
+
+sm-grid-filter .dropdown-toggle > span.fa{
+    float: right;
+    display: inline-block;
+    margin-top: 3.5px;
+    padding-left: 5px;
+}
+
+sm-grid-filter .sm-pad-3{
+  padding: 0 3px !important;
+}
+
+.sm-page-wrapper label{
+  color: #474747;
+  font-weight: normal;
+}
+
+.sm-page-wrapper legend{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sm-breadcrumb.breadcrumb{
+    padding: 1px 15px !important;
+    margin-bottom: 0px !important;
+    list-style: none;
+    background-color: transparent !important;
+}
+
+.sm-breadcrumb.breadcrumb > li + li:before {
+    padding: 1px 4px;
+    color: #000;
+    content: ">\00a0";
+    display: inline-block;
+}
