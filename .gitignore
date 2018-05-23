@@ -7,7 +7,6 @@
 !.gitignore
 
 #don't track these files
-/vendor/*
 /temp/*
 /node_modules/*
 

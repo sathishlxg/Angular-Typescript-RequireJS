@@ -3,5 +3,8 @@
 /// <amd-dependency path="odata"/>
 
 import * as angular from "angular";
-export default angular.module("userMaster.common", ["ncy-angular-breadcrumb", "ngProgress", "ODataResources"]);
-
+export default angular.module("userMaster.common", [
+    "ncy-angular-breadcrumb",
+    "ngProgress",
+    "ODataResources"
+]);

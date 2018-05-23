@@ -16,13 +16,13 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/ngProgress.css" />
 </head>
 
-<body ng-controller="appController as app">    
+<body ng-controller="appController as app">
     <div class="overlay" ng-if="app.isLoading"></div>
     <section ng-include="'modules/layout/templates/header.html'"></section>
     <section ng-include="'modules/layout/templates/topNav.html'"></section>
     <main ui-view></main>
 
-    <script type="text/javascript" src="../vendor/requirejs/require.min.js" data-main="require.Config.js"></script>
+    <script type="text/javascript" src="../vendor/requirejs/require.js" data-main="require.Config.js"></script>
 </body>
 
 </html>

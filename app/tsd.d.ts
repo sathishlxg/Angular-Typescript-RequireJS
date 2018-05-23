@@ -1,4 +1,4 @@
-﻿ /// <reference path="../typings/jquery/jquery.d.ts" />
+﻿/// <reference path="../typings/jquery/jquery.d.ts" />
 /// <reference path="../typings/angularjs/angular.d.ts" />
 /// <reference path="../typings/ui-grid/ui-grid.d.ts" />
 /// <reference path="../typings/requirejs/require.d.ts" />

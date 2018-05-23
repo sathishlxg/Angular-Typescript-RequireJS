@@ -17,6 +17,13 @@
   "dependencies": {
     "bootstrap": "~3.3.6",
     "normalize-strings": "normalize#~1.0.4",
-    "reset-css": "~2.0.2011012602"
+    "reset-css": "~2.0.2011012602",
+    "requirejs": "~2.3.5",
+    "angular-odata-resources": "~1.0.25",
+    "ngprogress": "~1.1.3",
+    "angular": "~1.7.0",
+    "moment": "~2.22.1",
+    "angular-ui-grid": "~4.4.11",
+    "angular-ui-router": "~1.0.18"
   }
 }

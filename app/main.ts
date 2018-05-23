@@ -1,3 +1,3 @@
-﻿require(["app"], (staffMaster) => {
+﻿require(["app"], staffMaster => {
     staffMaster.init();
-}); 
+});

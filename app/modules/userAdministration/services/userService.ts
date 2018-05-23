@@ -3,12 +3,11 @@ import * as models from "../models/user";
 import * as service from "./userRepository";
 
 export class UserService {
-
     static $inject = ["$q", "UserRepository"];
     constructor(
         private $q: angular.IQService,
-        private userRepository: service.UserRepository) {
-    }
+        private userRepository: service.UserRepository
+    ) {}
 
     public getUser(): angular.IPromise<models.User[]> {
         return this.userRepository.getAll();
@@ -17,8 +16,7 @@ export class UserService {
     public getUserById(id): angular.IPromise<models.User> {
         if (id) {
             return this.userRepository.getById(id);
-        }
-        else {
+        } else {
             return this.$q.when(new models.User());
         }
     }
@@ -26,8 +24,7 @@ export class UserService {
     public saveUser(User): angular.IPromise<models.User> {
         if (User.id) {
             return this.userRepository.update(User);
-        }
-        else {
+        } else {
             return this.userRepository.save(User);
         }
     }

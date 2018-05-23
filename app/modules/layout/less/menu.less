@@ -1,6 +1,6 @@
-@color-white: #FFF;
+@color-white: #fff;
 @border-color: #474747;
-@background-color: #D5D5D5;
+@background-color: #d5d5d5;
 
 .sm-menu ul {
   list-style: none;
@@ -9,31 +9,31 @@
   height: 40px;
   margin: 0;
 
-  li {  
-  display: inline-block;
-  border-right: 1px solid @color-white;
-
-  &:first-child{
-    border-left: 1px solid @color-white;
-    transition: all 2s linear;
-  }
-
-  a {
-    text-decoration: none;
+  li {
     display: inline-block;
-    padding: 10px;
-    color: @border-color;
-    width: 100%;
+    border-right: 1px solid @color-white;
 
-    i {
-      margin: 0 5px 0 6px;     
+    &:first-child {
+      border-left: 1px solid @color-white;
+      transition: all 2s linear;
+    }
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+      color: @border-color;
+      width: 100%;
+
+      i {
+        margin: 0 5px 0 6px;
+      }
     }
   }
- }
 }
 
 .sm-menu li a.menu-active,
 .sm-menu li a:hover {
-  background: #0051AA;
+  background: #0051aa;
   color: #fff;
 }
